@@ -7,10 +7,6 @@ from bs4 import BeautifulSoup
 import csv
 from datetime import datetime
 
-
-
-
-
 # Creating a PoolManager instance for sending requests.
 default_headers = urllib3.make_headers(proxy_basic_auth='brd-customer-hl_0ba0faa8-zone-data_center:9rc2myrrez3k')
 http = urllib3.ProxyManager("https://brd.superproxy.io:22225", proxy_headers=default_headers)
