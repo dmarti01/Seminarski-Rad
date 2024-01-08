@@ -12,7 +12,7 @@ global host
 global proxyuser
 global proxypass
 host = "https://brd.superproxy.io:22225"
-proxyuser = "brd-customer-hl_0ba0faa8-zone-data_center-datacenter_proxy1"
+proxyuser = "brd-customer-hl_0ba0faa8-zone-data_center-datacenter"
 #brd-customer-hl_0ba0faa8-zone-data_center:9rc2myrrez3k
 proxypass = "9rc2myrrez3k"
 
@@ -234,7 +234,8 @@ if __name__ == "__main__":
     # dd/mm/YYH:M:S
     dt_string = now.strftime("%d-%m-%Y_%H-%M-%S")
     print("date and time =", dt_string)
-    filenamewrite = file_path.split(".csv")[0] + "_scraped"+ dt_string + ".csv"
+    # filenamewrite = file_path.split(".csv")[0] + "_scraped"+ dt_string + ".csv"
+    filenamewrite = file_path
 
     with open(filenamewrite, 'a', newline='', encoding='utf-8') as csvfile:
         spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
