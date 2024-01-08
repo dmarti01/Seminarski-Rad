@@ -88,6 +88,7 @@ def getListingInfo(headerNumber, directory):
     with open(file_path, 'r', newline='', encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='|')
         line_count = 0
+        print(file_path)
         for row in reader:
             print(file_path)
             if line_count == 0:
@@ -167,10 +168,10 @@ def parseListing(response):
             ("mapData" in jsonl["values"].keys()) and isinstance(jsonl["values"]["mapData"], dict)
                 and ("defaultMarker" in jsonl["values"]["mapData"].keys())):
             
-    #         defmark = jsonl["values"]["mapData"]["defaultMarker"]
+            defmark = jsonl["values"]["mapData"]["defaultMarker"]
 
-    #         listingjson["lat"] = defmark["lat"]
-    #         listingjson["lng"] = defmark["lng"]
+            listingjson["lat"] = defmark["lat"]
+            listingjson["lng"] = defmark["lng"]
     
 
     dt_elements = soup.find_all('dt', class_='ClassifiedDetailBasicDetails-listTerm')
@@ -242,7 +243,7 @@ if __name__ == "__main__":
     else:
         print("No directories found.")
 
-    filename = f"listing_links_{selected_directory}_18-12-2023_13-16-20.csv"
+    filename = f"njuskalo_scrape_listing_links_{selected_directory}_18-12-2023_13-16-20.csv"
     file_path = f"{directory_path}/{selected_directory}/{filename}"
 
     last_processed_filename = f"{directory_path}/{selected_directory}/last_processed_line_{selected_directory}.txt"
