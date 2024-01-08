@@ -26,7 +26,8 @@ global host
 global proxyuser
 global proxypass
 host = "https://brd.superproxy.io:22225"
-proxyuser = "brd-customer-hl_0ba0faa8-zone-data_center"
+proxyuser = "brd-customer-hl_0ba0faa8-zone-data_center-datacenter_proxy1"
+#brd-customer-hl_0ba0faa8-zone-data_center:9rc2myrrez3k
 proxypass = "9rc2myrrez3k"
 
 current_directory = os.getcwd()
@@ -42,7 +43,7 @@ print("Current folder name:", folder_name)
 # Creating a PoolManager instance for sending requests.
 default_headers = urllib3.make_headers(proxy_basic_auth=proxyuser+":"+proxypass)
 http = urllib3.ProxyManager(host, proxy_headers=default_headers)
-headersfile = open("./utils/user_agents.txt", "r")
+headersfile = open("./user_agents.txt", "r")
 headers = headersfile.read()
 headers = eval(headers)
 global filenameread
@@ -84,7 +85,7 @@ def listingFetchParse(url, headerNumber):
 
 def getListingInfo(headerNumber, directory):
     last_processed_line = get_last_processed_line(directory)
-    with open(file_path , 'r', newline='', encoding='utf-8') as csvfile:
+    with open(file_path, 'r', newline='', encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='|')
         line_count = 0
         for row in reader:
@@ -120,19 +121,19 @@ def parseListing(response):
     html_content = response.data.decode("utf-8")
     listingjson = {
         "price": "",
-        # "lat": "",
-        # "lng": "",
-        # "county": "",
-        # "city": "",
-        # "neighborhood": "",
-        # "flatBuildingtype": "",
-        # "flatFloorCount": "",
-        # "numberOfRooms": "",
-        # "buildingFloorPosition": "",
-        # "livingArea": "",
-        # "url": "",
-        # "bathrooms with toilet": "",
-        # "toilets": ""
+        "lat": "",
+        "lng": "",
+        "county": "",
+        "city": "",
+        "neighborhood": "",
+        "carType": "",
+        "yearOfDistribution": "",
+        "yearOfModel": "",
+        "mileage": "",
+        "motor": "",
+        "url": "",
+        "additionalData": "",
+        "addData": ""
     }
 
     soup = BeautifulSoup(response.data.decode("utf-8"), "html.parser")
@@ -141,31 +142,30 @@ def parseListing(response):
     for index, price in enumerate(pricet):
         if ("class" in price.attrs):
             if ("ClassifiedDetailSummary-priceDomestic" in price["class"]):
-                print(price)
                 listingjson["price"] = price.text.rsplit("\xa0€ /")[0].strip().split(",")[0].strip()
                 '\n                                                145.000\xa0€ / 1.092.502,50\xa0kn\n                \n                                    '
                 break
     
 
-    # divz = soup.findAll("div")
-    # for index, div in enumerate(divz):
-    #     if ("class" in div.attrs):
-    #         if ("content-main" in div["class"]):
-    #             scripts = div.findAll("script")
-    #         if ("ClassifiedDetailPropertyGroups--standard" in div["class"]):
-    #             grijanje = div.findAll("section")
-    #             for index, grija in enumerate(grijanje):
-    #                 divuli = grija.findAll("div")[0].findAll("ul")[0]
-    #                 if grija.findAll("h3")[0].text == "Kupaonica i WC":
-    #                     listingjson["bathrooms with toilet"] = divuli.findAll("li")[0].text.rsplit(":")[1].strip()
-    #                     if len(divuli.findAll("li"))>1:
-    #                         listingjson["toilets"] = divuli.findAll("li")[1].text.rsplit(":")[1].strip()
-    # for index, script in enumerate(scripts):
-    #     jsona = script.text.rsplit("app.boot.push(")[1].strip().split(");")[0].strip()
-    #     jsonl = json.loads(jsona)
-    #     if (("values" in jsonl.keys()) and isinstance(jsonl["values"], dict) and 
-    #         ("mapData" in jsonl["values"].keys()) and isinstance(jsonl["values"]["mapData"], dict)
-    #             and ("defaultMarker" in jsonl["values"]["mapData"].keys())):
+    divz = soup.findAll("div")
+    for index, div in enumerate(divz):
+        if ("class" in div.attrs):
+            if ("content-main" in div["class"]):
+                scripts = div.findAll("script")
+            if ("ClassifiedDetailPropertyGroups--standard" in div["class"]):
+                grijanje = div.findAll("section")
+                for index, grija in enumerate(grijanje):
+                    divuli = grija.findAll("div")[0].findAll("ul")[0]
+                    if grija.findAll("h3")[0].text == "Dodatni podaci":
+                        listingjson["additionalData"] = divuli.findAll("li")[0].text.rsplit(":")[1].strip()
+                        if len(divuli.findAll("li"))>1:
+                            listingjson["addData"] = divuli.findAll("li")[1].text.rsplit(":")[1].strip()
+    for index, script in enumerate(scripts):
+        jsona = script.text.rsplit("app.boot.push(")[1].strip().split(");")[0].strip()
+        jsonl = json.loads(jsona)
+        if (("values" in jsonl.keys()) and isinstance(jsonl["values"], dict) and 
+            ("mapData" in jsonl["values"].keys()) and isinstance(jsonl["values"]["mapData"], dict)
+                and ("defaultMarker" in jsonl["values"]["mapData"].keys())):
             
     #         defmark = jsonl["values"]["mapData"]["defaultMarker"]
 
@@ -173,24 +173,24 @@ def parseListing(response):
     #         listingjson["lng"] = defmark["lng"]
     
 
-    # dt_elements = soup.find_all('dt', class_='ClassifiedDetailBasicDetails-listTerm')
-    # dd_elements = soup.find_all('dd', class_='ClassifiedDetailBasicDetails-listDefinition')
+    dt_elements = soup.find_all('dt', class_='ClassifiedDetailBasicDetails-listTerm')
+    dd_elements = soup.find_all('dd', class_='ClassifiedDetailBasicDetails-listDefinition')
 
-    # for index, dt in enumerate(dt_elements):
-    #     if dt.text.__contains__("Lokacija"):
-    #         listingjson["county"] = dd_elements[index].text.rsplit(",")[0].strip()
-    #         listingjson["city"] = dd_elements[index].text.rsplit(",")[1].strip()
-    #         listingjson["neighborhood"] = dd_elements[index].text.rsplit(",")[2].strip()
-    #     elif dt.text.__contains__("Tip stana"):
-    #         listingjson["flatBuildingtype"] = dd_elements[index].text.strip()
-    #     elif dt.text.__contains__("Broj etaža"):
-    #         listingjson["flatFloorCount"] = dd_elements[index].text.strip()
-    #     elif dt.text.__contains__("Broj soba"):
-    #         listingjson["numberOfRooms"] = dd_elements[index].text.strip()
-    #     elif dt.text.__contains__("Kat"):
-    #         listingjson["buildingFloorPosition"] = dd_elements[index].text.strip()
-    #     elif dt.text.__contains__("Stambena površina"):
-    #         listingjson["livingArea"] = dd_elements[index].text.rsplit(",")[0].strip()
+    for index, dt in enumerate(dt_elements):
+        if dt.text.__contains__("Lokacija vozila"):
+            listingjson["county"] = dd_elements[index].text.rsplit(",")[0].strip()
+            listingjson["city"] = dd_elements[index].text.rsplit(",")[1].strip()
+            listingjson["neighborhood"] = dd_elements[index].text.rsplit(",")[2].strip()
+        elif dt.text.__contains__("Tip automobila"):
+            listingjson["carType"] = dd_elements[index].text.strip()
+        elif dt.text.__contains__("Godina proizvodnje"):
+            listingjson["yearOfDistribution"] = dd_elements[index].text.strip()
+        elif dt.text.__contains__("Godina modela"):
+            listingjson["yearOfModel"] = dd_elements[index].text.strip()
+        elif dt.text.__contains__("Prijeđeni kilometri"):
+            listingjson["mileage"] = dd_elements[index].text.strip()
+        elif dt.text.__contains__("Motor"):
+            listingjson["motor"] = dd_elements[index].text.rsplit(",")[0].strip()
 
     return listingjson
 
@@ -204,8 +204,7 @@ def parseListingsAndToCsv(headerNumber, linenum, url):
         print(url)
         rowToWrite, headerNumber = listingFetchParse(url, headerNumber)  
         rowToWrite["url"] = url
-        # rowToWrite = (linenum, rowToWrite["price"], rowToWrite["livingArea"], rowToWrite["lat"], rowToWrite["lng"], rowToWrite["county"], rowToWrite["city"], rowToWrite["neighborhood"], rowToWrite["flatBuildingtype"], rowToWrite["flatFloorCount"], rowToWrite["numberOfRooms"], rowToWrite["bathrooms with toilet"], rowToWrite["toilets"], rowToWrite["buildingFloorPosition"], rowToWrite["url"])
-        # rowToWrite = (linenum, rowToWrite["price"], rowToWrite["livingArea"], rowToWrite["lat"], rowToWrite["lng"], rowToWrite["county"], rowToWrite["city"], rowToWrite["neighborhood"], rowToWrite["flatBuildingtype"], rowToWrite["flatFloorCount"], rowToWrite["numberOfRooms"], rowToWrite["bathrooms with toilet"], rowToWrite["toilets"], rowToWrite["buildingFloorPosition"], rowToWrite["url"])
+        rowToWrite = (linenum, rowToWrite["price"], rowToWrite["motor"], rowToWrite["lat"], rowToWrite["lng"], rowToWrite["county"], rowToWrite["city"], rowToWrite["neighborhood"], rowToWrite["carType"], rowToWrite["yearOfDistribution"], rowToWrite["yearOfModel"], rowToWrite["additionalData"], rowToWrite["addData"], rowToWrite["mileage"], rowToWrite["url"])
         if(rowToWrite):
             writer.writerow(rowToWrite)
     return headerNumber
@@ -232,6 +231,7 @@ if __name__ == "__main__":
     now = datetime.now()
 
     directory_path = './csvovi'
+    
 
     directories_list = list_directories(directory_path)
     if directories_list:
@@ -255,8 +255,7 @@ if __name__ == "__main__":
     with open(filenamewrite, 'a', newline='', encoding='utf-8') as csvfile:
         spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         if os.path.exists(filenamewrite) and os.stat(filenamewrite).st_size == 0:
-            spamwriter.writerow(["linenum","price"])       
-            # spamwriter.writerow(["linenum","price", "livingArea", "lat", "lng", "county", "city", "neighborhood", "flatBuildingtype", "flatFloorCount", "numberOfRooms", "bathrooms with toilet", "toilets", "buildingFloorPosition", "url"])       
+            spamwriter.writerow(["linenum","price", "motor", "lat", "lng", "county", "city", "neighborhood", "carType", "yearOfDistribution", "yearOfModel", "additionalData", "addData", "mileage", "url"])       
     
     getListingInfo(0, selected_directory)
     headersfile.close()
