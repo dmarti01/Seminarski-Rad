@@ -29,6 +29,10 @@ host = "https://brd.superproxy.io:22225"
 proxyuser = "brd-customer-hl_0ba0faa8-zone-data_center"
 proxypass = "9rc2myrrez3k"
 
+# default_headers = urllib3.make_headers(proxy_basic_auth='brd-customer-hl_0ba0faa8-zone-data_center:9rc2myrrez3k')
+# http = urllib3.ProxyManager("https://brd.superproxy.io:22225", proxy_headers=default_headers)
+# headersfile = open("./user_agents.txt", "r")
+
 current_directory = os.getcwd()
 folder_name = os.path.basename(current_directory)
 print("Current folder name:", folder_name) 
