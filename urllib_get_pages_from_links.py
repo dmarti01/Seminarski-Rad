@@ -26,8 +26,7 @@ global host
 global proxyuser
 global proxypass
 host = "https://brd.superproxy.io:22225"
-proxyuser = "brd-customer-hl_0ba0faa8-zone-data_center-datacenter_proxy1"
-#brd-customer-hl_0ba0faa8-zone-data_center:9rc2myrrez3k
+proxyuser = "brd-customer-hl_0ba0faa8-zone-data_center"
 proxypass = "9rc2myrrez3k"
 
 current_directory = os.getcwd()
