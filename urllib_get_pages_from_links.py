@@ -1,3 +1,17 @@
+
+# # Creating a PoolManager instance for sending requests.
+# # default_headers = urllib3.make_headers(proxy_basic_auth='brd-customer-hl_9d5c0427-zone-data_center:mhz69dt2jqyc')
+# # http = urllib3.ProxyManager("https://brd.superproxy.io:22225", proxy_headers=default_headers)
+# default_headers = urllib3.make_headers(proxy_basic_auth='brd-customer-hl_0ba0faa8-zone-data_center:9rc2myrrez3k')
+# http = urllib3.ProxyManager("https://brd.superproxy.io:22225", proxy_headers=default_headers)
+# headersfile = open("./user_agents.txt", "r")
+# headers = headersfile.read()
+# headers = eval(headers)
+# global filenameread
+# global filenamewrite
+# global startLine
+    
+
 from datetime import datetime
 import random
 import traceback
@@ -12,9 +26,12 @@ global host
 global proxyuser
 global proxypass
 host = "https://brd.superproxy.io:22225"
-proxyuser = "brd-customer-hl_0ba0faa8-zone-data_center-datacenter"
-#brd-customer-hl_0ba0faa8-zone-data_center:9rc2myrrez3k
+proxyuser = "brd-customer-hl_0ba0faa8-zone-data_center"
 proxypass = "9rc2myrrez3k"
+
+# default_headers = urllib3.make_headers(proxy_basic_auth='brd-customer-hl_0ba0faa8-zone-data_center:9rc2myrrez3k')
+# http = urllib3.ProxyManager("https://brd.superproxy.io:22225", proxy_headers=default_headers)
+# headersfile = open("./user_agents.txt", "r")
 
 current_directory = os.getcwd()
 folder_name = os.path.basename(current_directory)
@@ -74,7 +91,9 @@ def getListingInfo(headerNumber, directory):
     with open(file_path, 'r', newline='', encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='|')
         line_count = 0
+        print(file_path)
         for row in reader:
+            print(file_path)
             if line_count == 0:
                 line_count += 1
             else:
@@ -123,6 +142,7 @@ def parseListing(response):
 
     soup = BeautifulSoup(response.data.decode("utf-8"), "html.parser")
     pricet = soup.findAll("dd")
+    print(pricet)
     for index, price in enumerate(pricet):
         if ("class" in price.attrs):
             if ("ClassifiedDetailSummary-priceDomestic" in price["class"]):
@@ -226,7 +246,7 @@ if __name__ == "__main__":
     else:
         print("No directories found.")
 
-    filename = f"listing_links_{selected_directory}_18-12-2023_13-16-20.csv"
+    filename = f"njuskalo_scrape_listing_links_{selected_directory}_18-12-2023_13-16-20.csv"
     file_path = f"{directory_path}/{selected_directory}/{filename}"
 
     last_processed_filename = f"{directory_path}/{selected_directory}/last_processed_line_{selected_directory}.txt"
@@ -234,8 +254,7 @@ if __name__ == "__main__":
     # dd/mm/YYH:M:S
     dt_string = now.strftime("%d-%m-%Y_%H-%M-%S")
     print("date and time =", dt_string)
-    # filenamewrite = file_path.split(".csv")[0] + "_scraped"+ dt_string + ".csv"
-    filenamewrite = file_path
+    filenamewrite = f"{directory_path}/{selected_directory}/listing_links_{selected_directory}_18-12-2023_13-16-20.csv"
 
     with open(filenamewrite, 'a', newline='', encoding='utf-8') as csvfile:
         spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
