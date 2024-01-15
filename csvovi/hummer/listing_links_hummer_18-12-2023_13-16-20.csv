@@ -1,0 +1,5 @@
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,42.656287497542,18.088312752352,Dubrovačko-neretvanska,Dubrovnik,Hummer,H2,79.900 €,2010. godište,Benzin,293 kW,terensko vozilo / SUV / pick up,5,148000 km,https://www.njuskalo.hr/auti/hummer-h2-suv-6.2-v8-automatik-oglas-42067809
+2,46.39065,16.428534,Međimurska,Čakovec,Hummer,H3,46.000 €,2011. godište,Benzin,180 kW,terensko vozilo / SUV / pick up,4,34500 km,https://www.njuskalo.hr/auti/hummer-h3-luxury-oglas-40797356
+3,45.68142,13.968536,Slovenija,,Hummer,H2,50.000 €,2004. godište,Benzin,,terensko vozilo / SUV / pick up,5,158000 km,https://www.njuskalo.hr/auti/hummer-h2-6.0-oglas-41354727
+4,51.06448445481238,10.614212920558948,Njemačka,,Hummer,H3,17.575 €,2010. godište,Benzin,180 kW,terensko vozilo / SUV / pick up,5,138900 km,https://www.njuskalo.hr/auti/hummer-h3-suv-3.7-lpg-oglas-30311621

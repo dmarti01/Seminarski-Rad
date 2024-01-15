@@ -1,0 +1,11 @@
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,45.828728,16.109407,Grad Zagreb,Sesvete,Lada,Niva,1.899 €,2004. godište,Benzin,59 kW,terensko vozilo / SUV / pick up,3,161000 km,https://www.njuskalo.hr/auti/lada-niva-1700-4x4-oglas-42292521
+2,45.828728,16.109407,Grad Zagreb,Sesvete,Lada,Niva,5.699 €,2005. godište,Benzin,59 kW,terensko vozilo / SUV / pick up,3,64000 km,https://www.njuskalo.hr/auti/lada-niva-1.7-4x4-samo-64-t-km-originalno-stanje-vozila-oglas-42239338
+3,45.40315,18.976511,Vukovarsko-srijemska,Borovo,Lada,Niva,19.999 €,2020. godište,Benzin,61 kW,terensko vozilo / SUV / pick up,2,21750 km,https://www.njuskalo.hr/auti/lada-niva-n1-off-road-kuka-klima-zracni-jastuci-oglas-41249295
+4,45.560120805495,18.670903151726,Osječko-baranjska,Osijek,Lada,Niva,4.200 €,2010. godište,Benzin,59 kW,terensko vozilo / SUV / pick up,3,160000 km,https://www.njuskalo.hr/auti/lada-niva-1.7-plin-registracija-04-2024-oglas-41597560
+5,45.483415932115,15.543711403169,Karlovačka,Karlovac,Lada,Niva,2.700 €,2001. godište,Benzin,59 kW,terensko vozilo / SUV / pick up,3,100000 km,https://www.njuskalo.hr/auti/lada-niva-lada-niva-1.7i-4x4-oglas-41655824
+6,45.83076537969,16.086966991425,Grad Zagreb,Sesvete,Lada,Niva,7.000 €,2005. godište,Benzin,59 kW,limuzina,3,33000 km,https://www.njuskalo.hr/auti/lada-niva-4x4-1700-plin-oglas-41224727
+7,46.121365,16.259323,Varaždinska,Breznički Hum,Lada,Niva,4.000 €,2008. godište,Benzin,59 kW,terensko vozilo / SUV / pick up,3,160000 km,https://www.njuskalo.hr/auti/lada-niva-1700-oglas-41930864
+8,45.49842435,15.55850618,Karlovačka,Karlovac,Lada,Niva,8.500 €,2007. godište,Benzin,60 kW,terensko vozilo / SUV / pick up,3,89900 km,https://www.njuskalo.hr/auti/lada-niva-1700-oglas-41913557
+9,45.88426536,16.83192776,Bjelovarsko-bilogorska,Bjelovar,Lada,Niva,3.250 €,2005. godište,Benzin,59 kW,terensko vozilo / SUV / pick up,3,195000 km,https://www.njuskalo.hr/auti/lada-niva-1700-oglas-41550311
+11,51.060933757873,10.615476031792,Njemačka,,Lada,Niva,9.490 €,2015. godište,Benzin,61 kW,terensko vozilo / SUV / pick up,3,27270 km,https://www.njuskalo.hr/auti/lada-niva-1.7-4x4-gotovina-leasing-kredit-oglas-38766939

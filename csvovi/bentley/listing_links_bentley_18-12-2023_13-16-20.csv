@@ -1,8 +1,14 @@
-linenum,price,motor,lat,lng,county,city,neighborhood,carType,yearOfDistribution,yearOfModel,additionalData,addData,mileage,url
-1,229.900,Benzin,45.823889737925,16.052061874232,Grad Zagreb,Donja Dubrava,Donja Dubrava,6.0 W12,2018. godište,2018.,limuzina,5,89000 km,https://www.njuskalo.hr/auti/bentley-continental-gt-6.0-w12-first-edition-garancija-pdvu-oglas-40373538
-2,120.000,Benzin,44.13834,15.233718,Zadarska,Zadar,Bokanjac,Mulliner,2014. godište,2015.,limuzina,4,112000 km,https://www.njuskalo.hr/auti/bentley-flying-spur-mulliner-automatik-oglas-38886450
-4,295.000,Benzin,45.32519152005,14.444668819036,Primorsko-goranska,Rijeka,Centar,hybrid,2022. godište,2022.,terensko vozilo / SUV / pick up,5,15000 km,https://www.njuskalo.hr/auti/bentley-bentayga-hybrid-2022god-zamjena-oglas-42265461
-5,78.800,Benzin,45.826962288037,16.110383789151,Grad Zagreb,Sesvete,Sesvete,Ceramic Mulliner,2008. godište,,coupe,2,88000 km,https://www.njuskalo.hr/auti/bentley-continental-gt-speed-ceramic-mulliner-6.0w12-750ks-oglas-41022974
-6,65.000,Benzin,45.893111159642,16.836933533019,Bjelovarsko-bilogorska,Bjelovar,Centar,W12,2011. godište,2011.,coupe,2,450000 km,https://www.njuskalo.hr/auti/bentley-continental-gt-w12-automatik-oglas-33187289
-7,199.000,Benzin,45.826621198762,16.05473981893,Grad Zagreb,Donja Dubrava,Donja Dubrava,6.0,2019. godište,2019.,coupe,3,103000 km,https://www.njuskalo.hr/auti/bentley-continental-gt-speed-22coll-softclose-bentleygarancija-full-oglas-42161328
-8,285.000,Benzin,45.829724930728,16.050320265426,Grad Zagreb,Donja Dubrava,Donja Dubrava,V8 Mulliner,2020. godište,2020.,limuzina,5,96000 km,https://www.njuskalo.hr/auti/bentley-flying-spur-v8-mulliner-oglas-41699695
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,45.823889737925,16.052061874232,Grad Zagreb,Donja Dubrava,Bentley,Continental GT,229.900 €,2018. godište,Benzin,467 kW,limuzina,5,89000 km,https://www.njuskalo.hr/auti/bentley-continental-gt-6.0-w12-first-edition-garancija-pdvu-oglas-40373538
+2,44.13834,15.233718,Zadarska,Zadar,Bentley,Flying Spur,120.000 €,2014. godište,Benzin,373 kW,limuzina,4,112000 km,https://www.njuskalo.hr/auti/bentley-flying-spur-mulliner-automatik-oglas-38886450
+3,,,Grad Zagreb,,Bentley,Continental,259.900 €,2019. godište,Benzin,467 kW,coupe,5,30170 km,https://www.njuskalo.hr/auti/bentley-continental-6.0-gt-oglas-42290372
+4,45.32519152005,14.444668819036,Primorsko-goranska,Rijeka,Bentley,Bentayga,295.000 €,2022. godište,Benzin,250 kW,terensko vozilo / SUV / pick up,5,15000 km,https://www.njuskalo.hr/auti/bentley-bentayga-hybrid-2022god-zamjena-oglas-42265461
+5,45.826962288037,16.110383789151,Grad Zagreb,Sesvete,Bentley,Continental GT Speed,78.800 €,2008. godište,Benzin,,coupe,2,88000 km,https://www.njuskalo.hr/auti/bentley-continental-gt-speed-ceramic-mulliner-6.0w12-750ks-oglas-41022974
+6,45.893111159642,16.836933533019,Bjelovarsko-bilogorska,Bjelovar,Bentley,Continental GT,65.000 €,2011. godište,Benzin,423 kW,coupe,2,450000 km,https://www.njuskalo.hr/auti/bentley-continental-gt-w12-automatik-oglas-33187289
+7,45.826621198762,16.05473981893,Grad Zagreb,Donja Dubrava,Bentley,Continental GT,199.000 €,2019. godište,Benzin,467 kW,coupe,3,103000 km,https://www.njuskalo.hr/auti/bentley-continental-gt-speed-22coll-softclose-bentleygarancija-full-oglas-42161328
+8,45.829724930728,16.050320265426,Grad Zagreb,Donja Dubrava,Bentley,Flying Spur,285.000 €,2020. godište,Benzin,405 kW,limuzina,5,96000 km,https://www.njuskalo.hr/auti/bentley-flying-spur-v8-mulliner-oglas-41699695
+9,,,Grad Zagreb,,Bentley,Continental GT,85.000 €,2008. godište,Benzin,449 kW,coupe,2,56450 km,https://www.njuskalo.hr/auti/bentley-continental-gt-speed-oglas-41541492
+10,,,Grad Zagreb,,Bentley,Continental,139.900 €,2016. godište,Benzin,373 kW,kabriolet,2,45002 km,https://www.njuskalo.hr/auti/bentley-continental-gt-v8-cabrio-oglas-40996777
+11,,,Grad Zagreb,,Bentley,Continental GT,249.900 €,2019. godište,Benzin,467 kW,coupe,3,41197 km,https://www.njuskalo.hr/auti/bentley-continental-gt-w12-coupe-625hp-oglas-40227844
+12,51.06234666097278,10.616368425213842,Njemačka,,Bentley,Continental GT,64.250 €,2013. godište,Benzin,423 kW,coupe,3,72000 km,https://www.njuskalo.hr/auti/bentley-continental-gt-w12-carbon-automatik-oglas-30285667
+13,51.06027867362212,10.613879153738544,Njemačka,,Bentley,Continental,49.980 €,2013. godište,Benzin,449 kW,limuzina,5,85710 km,https://www.njuskalo.hr/auti/bentley-continental-flying-spur-speed-oglas-30285623

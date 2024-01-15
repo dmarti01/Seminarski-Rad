@@ -1,0 +1,39 @@
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,44.144234,15.227231,Zadarska,Zadar,Maserati,Coupe,35.000 €,2003. godište,Benzin,287 kW,coupe,2,112500 km,https://www.njuskalo.hr/auti/maserati-coupe-4200-oglas-39051702
+2,45.823889737925,16.052061874232,Grad Zagreb,Donja Dubrava,Maserati,Quattroporte,1 €,2014. godište,Benzin,390 kW,limuzina,5,88000 km,https://www.njuskalo.hr/auti/maserati-quattroporte-4.0-v8-gts-kamera-bowers-wilkins-pdv-21-oglas-40504863
+3,45.825731294678,16.054365842381,Grad Zagreb,Donja Dubrava,Maserati,Spyder,35.000 €,2004. godište,Benzin,287 kW,kabriolet,2,119000 km,https://www.njuskalo.hr/auti/maserati-spyder-4.2-gt-cabrio-oglas-38738695
+4,45.276653904338,18.849935647129,Vukovarsko-srijemska,Vinkovci,Maserati,Ghibli,35.500 €,2014. godište,Diesel,,limuzina,4,129000 km,https://www.njuskalo.hr/auti/maserati-ghibli-3.0-d-v6-automatik-oglas-41361739
+5,45.346829616402,18.960710139432,Vukovarsko-srijemska,Vukovar,Maserati,Levante,56.500 €,2015. godište,Diesel,202 kW,limuzina,5,150000 km,https://www.njuskalo.hr/auti/maserati-levante-3.0d-automatik-oglas-42020487
+6,45.801257648737,16.017109832369,Grad Zagreb,Peščenica - Žitnjak,Maserati,Quattroporte,49.500 €,2015. godište,Benzin,302 kW,limuzina,4,66600 km,https://www.njuskalo.hr/auti/maserati-quattroporte-q4-automatik-oglas-40797861
+7,,,Grad Zagreb,,Maserati,Levante,55.900 €,2018. godište,Diesel,184 kW,terensko vozilo / SUV / pick up,5,86596 km,https://www.njuskalo.hr/auti/maserati-levante-3.0d-v6-automatik-kamera-oglas-41784047
+8,51.062512226136,10.609218517774,Njemačka,,Maserati,Ghibli,49.999 €,2018. godište,Benzin,302 kW,limuzina,4,65225 km,https://www.njuskalo.hr/auti/maserati-ghibli-s3.0-svojim-kamionima-uvozimo-registracije-oglas-42257870
+9,45.348134345367896,19.006535713733122,Vukovarsko-srijemska,Vukovar,Maserati,Ghibli,33.400 €,2014. godište,Diesel,202 kW,limuzina,5,190000 km,https://www.njuskalo.hr/auti/maserati-ghibli-3.0-diesel-oglas-41610190
+10,44.92453,13.804804,Istarska,Fažana,Maserati,Ghibli,1 €,2014. godište,Diesel,202 kW,limuzina,4,125000 km,https://www.njuskalo.hr/auti/maserati-ghibli-3.0-automatik-oglas-41560286
+11,45.180649484746,18.052723100461,Brodsko-posavska,Slavonski Brod,Maserati,Ghibli,21.990 €,2016. godište,Diesel,202 kW,limuzina,4,112000 km,https://www.njuskalo.hr/auti/maserati-ghibli-3.0d-v6-oglas-41679212
+12,45.846466,15.669327,Slovenija,,Maserati,Levante,59.999 €,2017. godište,Benzin,316 kW,terensko vozilo / SUV / pick up,5,94765 km,https://www.njuskalo.hr/auti/maserati-levante-q4-3.0-v6-led-acc-zracno-memory-soft-c-kamer-360-20-oglas-41520221
+13,46.388422347272,16.434668168047,Međimurska,Čakovec,Maserati,Levante,41.999 €,2018. godište,Diesel,184 kW,terensko vozilo / SUV / pick up,5,174237 km,https://www.njuskalo.hr/auti/maserati-levante-grandelusso-oglas-41054102
+14,46.092583766388,16.076758667227,Grad Zagreb,Donji Grad,Maserati,Ghibli,55.000 €,2014. godište,Benzin,302 kW,limuzina,4,61000 km,https://www.njuskalo.hr/auti/maserati-ghibli-3.0-v6-sq4-oglas-42097197
+19,51.06394347452,10.610160804314,Njemačka,,Maserati,Ghibli,43.333 €,2017. godište,Diesel,202 kW,limuzina,4,82000 km,https://www.njuskalo.hr/auti/maserati-ghibli-3.0-v6-facelift-bixenon-navi-koza-pdcx2-82000km-oglas-41990522
+25,45.798578331531,15.946848385899,Grad Zagreb,Trešnjevka - Sjever,Maserati,Levante,58.950 €,2018. godište,Diesel,184 kW,terensko vozilo / SUV / pick up,5,122000 km,https://www.njuskalo.hr/auti/maserati-levante-3.0d-automatik-oglas-38087234
+26,,,Grad Zagreb,,Maserati,Grecale,110.035,2023. godište,Benzin,221 kW,terensko vozilo / SUV / pick up,5,,https://www.njuskalo.hr/novi-auti/maserati-grecale-gt-oglas-41784952
+27,,,Grad Zagreb,,Maserati,Grecale,112.037,2023. godište,Benzin,221 kW,terensko vozilo / SUV / pick up,5,,https://www.njuskalo.hr/novi-auti/maserati-grecale-gt-oglas-41748560
+28,,,Grad Zagreb,,Maserati,Grecale,112.389,2023. godište,Benzin,221 kW,terensko vozilo / SUV / pick up,5,,https://www.njuskalo.hr/novi-auti/maserati-grecale-gt-oglas-41748559
+29,,,Grad Zagreb,,Maserati,Grecale,108.220,2023. godište,Benzin,221 kW,terensko vozilo / SUV / pick up,5,,https://www.njuskalo.hr/novi-auti/maserati-grecale-gt-oglas-41740393
+30,45.80063,15.947341,Grad Zagreb,Trešnjevka - Sjever,Maserati,GranTurismo,65.000 €,2012. godište,Benzin,316 kW,coupe,2,92000 km,https://www.njuskalo.hr/auti/maserati-granturismo-mc-sportline-oglas-40785531
+31,,,Grad Zagreb,,Maserati,Grecale,125.196,2023. godište,Benzin,243 kW,terensko vozilo / SUV / pick up,5,,https://www.njuskalo.hr/novi-auti/maserati-grecale-modena-oglas-41403167
+32,51.062223852222,10.616356610977,Njemačka,,Maserati,Ghibli,39.999 €,2016. godište,Diesel,202 kW,limuzina,4,132000 km,https://www.njuskalo.hr/auti/maserati-ghibli-3.0-v6-bixenon-navi-gr-sj-pdcx2-kamera-koza-nepus-v-oglas-41319728
+33,51.062223852222,10.616356610977,Njemačka,,Maserati,Ghibli,37.999 €,2016. godište,Diesel,202 kW,limuzina,4,133000 km,https://www.njuskalo.hr/auti/maserati-ghibli-3.0-v6-bixenon-navi-koza-gr-sj-pdcx2-oglas-41319532
+34,51.062223852222,10.616356610977,Njemačka,,Maserati,Ghibli,38.999 €,2016. godište,Diesel,202 kW,limuzina,4,108000 km,https://www.njuskalo.hr/auti/maserati-ghibli-3.0-v6-led-navi-koza-gr-sj-x4-keyless-109000km-oglas-41319346
+35,51.06026351999133,10.611785572334465,Njemačka,,Maserati,Ghibli,29.500 €,2014. godište,Benzin,243 kW,limuzina,4,83900 km,https://www.njuskalo.hr/auti/maserati-ghibli-3.0-v6-automatik-oglas-30319033
+36,51.06137591515358,10.609625438071607,Njemačka,,Maserati,Ghibli,32.900 €,2015. godište,Diesel,202 kW,limuzina,4,76958 km,https://www.njuskalo.hr/auti/maserati-ghibli-3.0-d-v6-oglas-30319003
+37,,,Grad Zagreb,,Maserati,Grecale,160.938,2023. godište,Benzin,390 kW,terensko vozilo / SUV / pick up,5,,https://www.njuskalo.hr/novi-auti/maserati-grecale-trofeo-oglas-40550382
+38,,,Grad Zagreb,,Maserati,Grecale,103.671,2023. godište,Benzin,221 kW,terensko vozilo / SUV / pick up,5,,https://www.njuskalo.hr/novi-auti/maserati-grecale-gt-oglas-40550381
+39,,,Grad Zagreb,,Maserati,GranTurismo,295.841 €,2023. godište,Benzin,404 kW,coupe,3,,https://www.njuskalo.hr/novi-auti/maserati-granturismo-trofeo-oglas-40550380
+40,,,Grad Zagreb,,Maserati,GranTurismo,234.603,2023. godište,Benzin,360 kW,coupe,3,,https://www.njuskalo.hr/novi-auti/maserati-granturismo-modena-oglas-40550379
+41,51.062420835,10.61279297,Njemačka,,Maserati,Ghibli,46.999 €,2017. godište,Diesel,202 kW,coupe,4,82000 km,https://www.njuskalo.hr/auti/maserati-ghibli-gransport-facelift-bixenon-navi-koza-nepus-v-82000km-oglas-40269677
+42,51.06201962258787,10.609273001539238,Njemačka,,Maserati,GranTurismo,68.941 €,2017. godište,Benzin,338 kW,coupe,3,45000 km,https://www.njuskalo.hr/auti/maserati-granturismo-4.7-v8-sport-automatik-oglas-31081426
+43,51.06452804491897,10.61404034529231,Njemačka,,Maserati,Ghibli,44.998 €,2017. godište,Diesel,202 kW,limuzina,5,19800 km,https://www.njuskalo.hr/auti/maserati-ghibli-3.0-d-automatik-oglas-31081404
+44,51.06204970629246,10.609264654368687,Njemačka,,Maserati,Levante,42.980 €,2017. godište,Benzin,316 kW,terensko vozilo / SUV / pick up,5,79900 km,https://www.njuskalo.hr/auti/maserati-levante-3.0-v6-4x4-automatik-oglas-31081446
+45,41.73414024974543,13.115473919358704,Italija,,Maserati,Levante,49.900 €,2017. godište,Diesel,202 kW,terensko vozilo / SUV / pick up,5,76000 km,https://www.njuskalo.hr/auti/maserati-levante-3.0d-v6-gransport-automatik-oglas-31275475
+46,51.0640913553479,10.61039865384988,Njemačka,,Maserati,Levante,57.999 €,2017. godište,Benzin,316 kW,terensko vozilo / SUV / pick up,4,44300 km,https://www.njuskalo.hr/auti/maserati-levante-sq4-automatik-oglas-31275525
+47,46.14664382146697,15.212304420279054,Slovenija,,Maserati,Quattroporte,16.500 €,2004. godište,Benzin,295 kW,limuzina,4,116000 km,https://www.njuskalo.hr/auti/maserati-quattroporte-4.2-duo-select-automatik-oglas-38355994

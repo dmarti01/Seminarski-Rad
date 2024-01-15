@@ -1,0 +1,5 @@
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,45.797314,15.918396,Grad Zagreb,Stenjevec,Lincoln,Towncar,35.000 €,1979. godište,Benzin,129 kW,limuzina,4,125000 km,https://www.njuskalo.hr/auti/lincoln-continental-6.6-v8-1979-full-oglas-38668521
+2,45.720924732568,16.068087538762,Zagrebačka,Velika Gorica,Lincoln,Towncar,4.900 €,2000. godište,Benzin,151 kW,limuzina,4,129000 km,https://www.njuskalo.hr/auti/lincoln-ls-v6-automatik-prestizni-americki-automobil-izvrsno-sacuvan-oglas-42295926
+3,45.56402423367368,18.659010399991274,Osječko-baranjska,Osijek,Lincoln,Towncar,13.950 €,1990. godište,Benzin,149 kW,limuzina,4,60000 km,https://www.njuskalo.hr/auti/lincoln-towncar-towncar-automatik-oglas-40584183
+4,45.872295773187,15.79990349338,Zagrebačka,Brdovec,Lincoln,Towncar,17.000 €,1979. godište,Benzin,130 kW,limuzina,3,135000 km,https://www.njuskalo.hr/auti/lincoln-continental-oglas-41745865

@@ -1,0 +1,9 @@
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,45.795492346048,15.707832132294,Zagrebačka,Samobor,Saab,9.3,5.000 €,1999. godište,Benzin,151 kW,kabriolet,2,212392 km,https://www.njuskalo.hr/auti/saab-9.3-se-2.0-kabriolet-anindol-oglas-36793307
+2,45.795446737893,16.017390489578,Grad Zagreb,Peščenica - Žitnjak,Saab,9.3,8.900 €,2004. godište,Benzin,110 kW,kabriolet,2,196800 km,https://www.njuskalo.hr/auti/saab-9.3-1.8-t-110kw-cabrio-oglas-41703889
+3,45.124348,14.528608,Primorsko-goranska,Malinska-Dubašnica,Saab,9.3,2.400 €,2001. godište,Diesel,92 kW,limuzina,4,260800 km,https://www.njuskalo.hr/auti/saab-9.3-2.2-tid-oglas-41787943
+4,45.57281,16.930143,Bjelovarsko-bilogorska,Garešnica,Saab,900,2.500 €,1997. godište,Benzin,96 kW,hatchback,5,104000 km,https://www.njuskalo.hr/auti/saab-900-2.0-oglas-41557930
+5,45.353240195725,14.399644034588,Primorsko-goranska,Rijeka,Saab,9.3,5.000 €,2008. godište,Diesel,132 kW,limuzina,4,330000 km,https://www.njuskalo.hr/auti/saab-9.3-1.9-oglas-38836622
+6,45.799328139692,15.708722144443,Zagrebačka,Samobor,Saab,9.5,4.100 €,2006. godište,Diesel,110 kW,limuzina,5,365000 km,https://www.njuskalo.hr/auti/saab-9.5-prvi-vlasnik-registriran-1-24-oglas-41661512
+7,45.831973937692,16.004029975562,Grad Zagreb,Maksimir,Saab,9.5,4.500 €,2006. godište,Diesel,110 kW,limuzina,4,310000 km,https://www.njuskalo.hr/auti/saab-9.5-1.9-automatik-oglas-28641033
+8,45.804786009906955,15.879972561810451,Grad Zagreb,Stenjevec,Saab,9.3,1.800 €,1999. godište,Diesel,85 kW,hatchback,5,300000 km,https://www.njuskalo.hr/auti/saab-9.3-se-2.2-tid-oglas-41575585

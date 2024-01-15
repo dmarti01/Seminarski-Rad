@@ -1,0 +1,11 @@
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,45.82462645018047,15.956562706222819,Grad Zagreb,Gornji Grad - Medveščak,Aston Martin,Vantage,150.000 €,2010. godište,Benzin,313 kW,coupe,2,118000 km,https://www.njuskalo.hr/auti/aston-martin-vantage-coupe-automatik-oglas-38065809
+2,,,Grad Zagreb,,Aston Martin,DBS,676.227,2023. godište,Benzin,566 kW,coupe,3,,https://www.njuskalo.hr/novi-auti/aston-martin-dbs-770-ultimate-coupe-oglas-42090050
+3,45.82465727202,15.969621359322,Grad Zagreb,Gornji Grad - Medveščak,Aston Martin,DB9,99.000 €,2007. godište,Benzin,,coupe,2,80000 km,https://www.njuskalo.hr/auti/aston-martin-db9-dbs-kupljen-nov-hrvatskoj-veliki-servis-gume-oglas-40807896
+4,,,Grad Zagreb,,Aston Martin,DBX,294.900 €,2023. godište,Benzin,405 kW,terensko vozilo / SUV / pick up,5,,https://www.njuskalo.hr/novi-auti/aston-martin-dbx-4.0-v8-twin-turbo-oglas-40550371
+5,51.06396185244732,10.615397916374436,Njemačka,,Aston Martin,Vantage,59.980 €,2015. godište,Benzin,321 kW,coupe,3,44453 km,https://www.njuskalo.hr/auti/aston-martin-v8-vantage-sportshift-sp10-oglas-30273977
+6,51.063693273519675,10.609843586731136,Njemačka,,Aston Martin,Vantage,68.899 €,2016. godište,Benzin,321 kW,coupe,2,39135 km,https://www.njuskalo.hr/auti/aston-martin-vantage-sportshi-ii-n430-automatik-oglas-31024864
+7,51.06389722673213,10.610094923492746,Njemačka,,Aston Martin,V8,55.470 €,2013. godište,Benzin,476 kW,limuzina,5,81503 km,https://www.njuskalo.hr/auti/aston-martin-rapide-v12-oglas-31265623
+8,,,Grad Zagreb,,Aston Martin,DBS,645.225,2023. godište,Benzin,566 kW,coupe,3,,https://www.njuskalo.hr/novi-auti/aston-martin-dbs-770-ultimate-coupe-oglas-39418254
+9,,,Grad Zagreb,,Aston Martin,DBS,428.775,2022. godište,Benzin,533 kW,coupe,2,,https://www.njuskalo.hr/novi-auti/aston-martin-dbs-superleggera-5.2-v12-oglas-38991398
+10,,,Grad Zagreb,,Aston Martin,DBX,289.900 €,2022. godište,Benzin,405 kW,terensko vozilo / SUV / pick up,5,,https://www.njuskalo.hr/novi-auti/aston-martin-dbx-4.0-v8-twin-turbo-oglas-38632445

@@ -97,7 +97,7 @@ def getListingInfo(headerNumber, directory):
             if line_count == 0:
                 line_count += 1
             else:
-                if line_count > last_processed_line and row[1].__contains__("https://www.njuskalo.hr/auti/"):
+                if line_count > last_processed_line and ("https://www.njuskalo.hr/auti/" in row[1] or "https://www.njuskalo.hr/novi-auti/" in row[1]):
                     try:
                         headerNumber = parseListingsAndToCsv(headerNumber,row[0], row[1])
                     except(Exception):
@@ -124,20 +124,21 @@ def update_last_processed_line(directory, line_number):
 def parseListing(response):
     html_content = response.data.decode("utf-8")
     listingjson = {
-        "price": "",
         "lat": "",
         "lng": "",
         "county": "",
         "city": "",
-        "neighborhood": "",
-        "carType": "",
+        #"neighborhood": "",
+        "carBrand": "",
+        "carModel": "",
+        "price": "",
+        "power": "",
         "yearOfDistribution": "",
-        "yearOfModel": "",
         "mileage": "",
         "motor": "",
         "url": "",
-        "additionalData": "",
-        "addData": ""
+        "oblikVozila": "",
+        "brojVrata": ""
     }
 
     soup = BeautifulSoup(response.data.decode("utf-8"), "html.parser")
@@ -161,9 +162,9 @@ def parseListing(response):
                 for index, grija in enumerate(grijanje):
                     divuli = grija.findAll("div")[0].findAll("ul")[0]
                     if grija.findAll("h3")[0].text == "Dodatni podaci":
-                        listingjson["additionalData"] = divuli.findAll("li")[0].text.rsplit(":")[1].strip()
+                        listingjson["oblikVozila"] = divuli.findAll("li")[0].text.rsplit(":")[1].strip()
                         if len(divuli.findAll("li"))>1:
-                            listingjson["addData"] = divuli.findAll("li")[1].text.rsplit(":")[1].strip()
+                            listingjson["brojVrata"] = divuli.findAll("li")[1].text.rsplit(":")[1].strip()
     for index, script in enumerate(scripts):
         jsona = script.text.rsplit("app.boot.push(")[1].strip().split(");")[0].strip()
         jsonl = json.loads(jsona)
@@ -182,15 +183,20 @@ def parseListing(response):
 
     for index, dt in enumerate(dt_elements):
         if dt.text.__contains__("Lokacija vozila"):
-            listingjson["county"] = dd_elements[index].text.rsplit(",")[0].strip()
-            listingjson["city"] = dd_elements[index].text.rsplit(",")[1].strip()
-            listingjson["neighborhood"] = dd_elements[index].text.rsplit(",")[2].strip()
-        elif dt.text.__contains__("Tip automobila"):
-            listingjson["carType"] = dd_elements[index].text.strip()
+            location_parts = dd_elements[index].text.split(",")
+            listingjson["county"] = location_parts[0].strip()
+            listingjson["city"] = location_parts[1].strip() if len(location_parts) > 1 else ""
+            #listingjson["neighborhood"] = dd_elements[index].text.rsplit(",")[2].strip()
+        elif dt.text.__contains__("Marka automobila"):
+            listingjson["carBrand"] = dd_elements[index].text.strip()
+        elif dt.text.__contains__("Model automobila"):
+            listingjson["carModel"] = dd_elements[index].text.strip()
+        # elif dt.text.__contains__("Tip automobila"):
+        #     listingjson["carType"] = dd_elements[index].text.strip()
         elif dt.text.__contains__("Godina proizvodnje"):
             listingjson["yearOfDistribution"] = dd_elements[index].text.strip()
-        elif dt.text.__contains__("Godina modela"):
-            listingjson["yearOfModel"] = dd_elements[index].text.strip()
+        elif dt.text.__contains__("Snaga motora"):
+            listingjson["power"] = dd_elements[index].text.strip()
         elif dt.text.__contains__("Prijeđeni kilometri"):
             listingjson["mileage"] = dd_elements[index].text.strip()
         elif dt.text.__contains__("Motor"):
@@ -206,24 +212,28 @@ def parseListingsAndToCsv(headerNumber, linenum, url):
         else:
             headerNumber = 0
         print(url)
-        rowToWrite, headerNumber = listingFetchParse(url, headerNumber)  
-        rowToWrite["url"] = url
-        rowToWrite = (linenum, rowToWrite["price"], rowToWrite["motor"], rowToWrite["lat"], rowToWrite["lng"], rowToWrite["county"], rowToWrite["city"], rowToWrite["neighborhood"], rowToWrite["carType"], rowToWrite["yearOfDistribution"], rowToWrite["yearOfModel"], rowToWrite["additionalData"], rowToWrite["addData"], rowToWrite["mileage"], rowToWrite["url"])
-        if(rowToWrite):
-            writer.writerow(rowToWrite)
+        try:
+            rowToWrite, headerNumber = listingFetchParse(url, headerNumber)
+            rowToWrite["url"] = url
+            rowToWrite = (linenum, rowToWrite["lat"], rowToWrite["lng"], rowToWrite["county"], rowToWrite["city"], rowToWrite["carBrand"], rowToWrite["carModel"], rowToWrite["price"], rowToWrite["yearOfDistribution"], rowToWrite["motor"], rowToWrite["power"], rowToWrite["oblikVozila"], rowToWrite["brojVrata"], rowToWrite["mileage"], rowToWrite["url"])
+            if(rowToWrite):
+                writer.writerow(rowToWrite)
+        except Exception as e:
+            print(f"Error processing {url}: {e}")
+            traceback.print_exc()
     return headerNumber
 
 def list_directories(directory_path):
     directories = [d for d in os.listdir(directory_path) if os.path.isdir(os.path.join(directory_path, d))]
     return directories
 
-def select_directory(directories):
+def select_directory(directories, selection):
     print("Select a directory:")
     for index, directory in enumerate(directories, start=1):
         print(f"{index}. {directory}")
-
+    
     # Prompt the user to select a directory
-    selection = int(input("Enter the number of the directory you want to use: ")) - 1
+    #selection = int(input("Enter the number of the directory you want to use: ")) - 1
 
     if 0 <= selection < len(directories):
         return directories[selection]
@@ -235,31 +245,33 @@ if __name__ == "__main__":
     now = datetime.now()
 
     directory_path = './csvovi'
-    
+    selekcija = 0
 
     directories_list = list_directories(directory_path)
-    if directories_list:
-        selected_directory = select_directory(directories_list)
-    if selected_directory:
-        print(f"Selected directory: {selected_directory}")
-        # filename = f"listing_links_{selected_directory}.csv"
-    else:
-        print("No directories found.")
+    while (directories_list):
+        if directories_list:
+            selected_directory = select_directory(directories_list, selekcija)
+        if selected_directory:
+            print(f"Selected directory: {selected_directory}")
+            # filename = f"listing_links_{selected_directory}.csv"
+        else:
+            print("No directories found.")
 
-    filename = f"njuskalo_scrape_listing_links_{selected_directory}_18-12-2023_13-16-20.csv"
-    file_path = f"{directory_path}/{selected_directory}/{filename}"
+        filename = f"njuskalo_scrape_listing_links_{selected_directory}_18-12-2023_13-16-20.csv"
+        file_path = f"{directory_path}/{selected_directory}/{filename}"
 
-    last_processed_filename = f"{directory_path}/{selected_directory}/last_processed_line_{selected_directory}.txt"
+        last_processed_filename = f"{directory_path}/{selected_directory}/last_processed_line_{selected_directory}.txt"
 
-    # dd/mm/YYH:M:S
-    dt_string = now.strftime("%d-%m-%Y_%H-%M-%S")
-    print("date and time =", dt_string)
-    filenamewrite = f"{directory_path}/{selected_directory}/listing_links_{selected_directory}_18-12-2023_13-16-20.csv"
+        # dd/mm/YYH:M:S
+        dt_string = now.strftime("%d-%m-%Y_%H-%M-%S")
+        print("date and time =", dt_string)
+        filenamewrite = f"{directory_path}/{selected_directory}/listing_links_{selected_directory}_18-12-2023_13-16-20.csv"
 
-    with open(filenamewrite, 'a', newline='', encoding='utf-8') as csvfile:
-        spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
-        if os.path.exists(filenamewrite) and os.stat(filenamewrite).st_size == 0:
-            spamwriter.writerow(["linenum","price", "motor", "lat", "lng", "county", "city", "neighborhood", "carType", "yearOfDistribution", "yearOfModel", "additionalData", "addData", "mileage", "url"])       
-    
-    getListingInfo(0, selected_directory)
+        with open(filenamewrite, 'a', newline='', encoding='utf-8') as csvfile:
+            spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+            if os.path.exists(filenamewrite) and os.stat(filenamewrite).st_size == 0:
+                spamwriter.writerow(["linenum", "lat", "lng", "county", "city", "carBrand", "carModel", "price", "yearOfDistribution", "motor", "power", "oblikVozila", "brojVrata", "mileage", "url"])       
+        
+        getListingInfo(0, selected_directory)
+        selekcija += 1
     headersfile.close()

@@ -1,0 +1,15 @@
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+2,46.308007,16.34024,Varaždinska,Varaždin,Dodge,RAM,32.800 €,2016. godište,Benzin,290 kW,terensko vozilo / SUV / pick up,4,123792 km,https://www.njuskalo.hr/auti/dodge-ram-5.7-hemi-automatik-automatik-oglas-36848490
+3,45.818132713992,16.063532076445,Grad Zagreb,Donja Dubrava,Dodge,Challenger,34.900 €,2011. godište,Benzin,195 kW,coupe,2,138000 km,https://www.njuskalo.hr/auti/dodge-challenger-srt-3.5-v6-automatik-toop-stanje-oglas-41504741
+4,45.937827554406,15.855261788587,Zagrebačka,Jakovlje,Dodge,RAM,28.900 €,2005. godište,Diesel,239 kW,terensko vozilo / SUV / pick up,4,326000 km,https://www.njuskalo.hr/auti/dodge-ram-2500-oglas-41313655
+5,51.061516034523,10.609518074294682,Njemačka,,Dodge,RAM,77.139 €,2021. godište,Diesel,194 kW,terensko vozilo / SUV / pick up,4,34890 km,https://www.njuskalo.hr/auti/dodge-ram-1500-3.0-ecodiesel-crewcab-longhorn-limited-edition-oglas-42252360
+6,45.194134,18.042858,Brodsko-posavska,Podcrkavlje,Dodge,Nitro,14.000 €,2007. godište,Diesel,140 kW,terensko vozilo / SUV / pick up,5,208000 km,https://www.njuskalo.hr/auti/dodge-nitro-2.8-crd-oglas-42152604
+7,45.788716179557,16.004183942892,Grad Zagreb,Peščenica - Žitnjak,Dodge,Avenger,6.500 €,2008. godište,Diesel,103 kW,limuzina,4,234000 km,https://www.njuskalo.hr/auti/dodge-avenger-2.0-crd-sxt-oglas-40970147
+8,45.779171358264,16.167490268749,Zagrebačka,Rugvica,Dodge,RAM,40.000 €,2019. godište,Benzin,295 kW,terensko vozilo / SUV / pick up,4,167000 km,https://www.njuskalo.hr/auti/dodge-ram-5.7l-automatik-oglas-42107114
+9,43.297603178954,17.016551502003,Splitsko-dalmatinska,Makarska,Dodge,Charger,30.000 €,2012. godište,Benzin,215 kW,limuzina,5,248210 km,https://www.njuskalo.hr/auti/dodge-charger-sxt-automatik-oglas-39823510
+10,46.413760195471,16.394101238257,Međimurska,Sveti Juraj Na Bregu,Dodge,RAM,19.800 €,2003. godište,Benzin,184 kW,terensko vozilo / SUV / pick up,5,122176 km,https://www.njuskalo.hr/auti/dodge-ram-1500-automatik-oglas-41555939
+11,45.80108,15.977234,Grad Zagreb,Trnje,Dodge,Nitro,12.000 €,2007. godište,Diesel,,karavan,5,198000 km,https://www.njuskalo.hr/auti/dodge-nitro-2.8-crd-oglas-41479655
+12,51.06454543517562,10.613963276629097,Njemačka,,Dodge,RAM,36.990 €,2017. godište,Benzin,295 kW,terensko vozilo / SUV / pick up,4,34000 km,https://www.njuskalo.hr/auti/dodge-ram-hemi-5.7-v8-automatik-oglas-31080284
+13,51.06421088058505,10.614957575279734,Njemačka,,Dodge,Charger,29.999 €,2018. godište,Benzin,280 kW,limuzina,5,33524 km,https://www.njuskalo.hr/auti/dodge-charger-hemi-5.7-v8-automatik-oglas-31080263
+14,51.06017398754107,10.612921717359427,Njemačka,,Dodge,Challenger,26.990 €,2016. godište,Benzin,227 kW,coupe,3,46000 km,https://www.njuskalo.hr/auti/dodge-challenger-3.6-hellcat-automatik-oglas-31080238
+15,46.28937524176213,16.19721866694303,Varaždinska,Maruševec,Dodge,RAM,65.000 €,2005. godište,Benzin,368 kW,terensko vozilo / SUV / pick up,4,12254 km,https://www.njuskalo.hr/auti/dodge-ram-srt-10-automatik-oglas-33341351

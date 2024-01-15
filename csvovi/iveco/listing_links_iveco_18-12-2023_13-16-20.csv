@@ -1,0 +1,5 @@
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,45.880046795,16.175583435,Grad Zagreb,Sesvete,Iveco,Massif,11.999 €,2017. godište,Diesel,,kombibus,5,160 km,https://www.njuskalo.hr/auti/iveco-massif-2.3-oglas-42067216
+2,45.804646,15.789424,Zagrebačka,Sveta Nedelja,Iveco,Massif,23.500 €,2010. godište,Diesel,130 kW,terensko vozilo / SUV / pick up,5,66000 km,https://www.njuskalo.hr/auti/iveco-massif-3.0d-oglas-42281873
+3,45.850586968718,16.064227729649,Grad Zagreb,Gornja Dubrava,Iveco,Massif,26.500 €,2017. godište,Diesel,115 kW,kombibus,4,110000 km,https://www.njuskalo.hr/auti/iveco-daily-teretno-hladnjaca-agregatom-oglas-40742708
+4,45.68697315587236,16.017377666514705,Grad Zagreb,Peščenica - Žitnjak,Iveco,Massif,6.500 €,2003. godište,Diesel,92 kW,kombibus,5,87000 km,https://www.njuskalo.hr/auti/iveco-massif-2.8-jtd-oglas-42120229

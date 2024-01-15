@@ -1,0 +1,6 @@
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,45.823889737925,16.052061874232,Grad Zagreb,Donja Dubrava,Lamborghini,Huracan,285.000 €,2017. godište,Benzin,449 kW,kabriolet,2,29000 km,https://www.njuskalo.hr/auti/lamborghini-huracan-lp-610-4-oglas-41621151
+2,45.3486095743256,14.323352362632543,Primorsko-goranska,Opatija,Lamborghini,Huracan,259.000 €,2017. godište,Benzin,427 kW,coupe,2,89000 km,https://www.njuskalo.hr/auti/lamborghini-huracan-lp610-2-automatik-oglas-41413964
+3,45.792744,15.906451,Grad Zagreb,Trešnjevka - Jug,Lamborghini,Urus,285.900 €,2019. godište,Benzin,478 kW,coupe,5,41000 km,https://www.njuskalo.hr/auti/lamborghini-urus-4.0v8-automatik-oglas-42208234
+4,45.792744,15.906451,Grad Zagreb,Trešnjevka - Jug,Lamborghini,Urus,299.900 €,2019. godište,Benzin,478 kW,terensko vozilo / SUV / pick up,5,37000 km,https://www.njuskalo.hr/auti/lamborghini-urus-4.0-v8-alu-22-head-up-pano-kamera-360-virtual-garanc-oglas-41522257
+5,45.794416199656,16.028558611208,Grad Zagreb,Peščenica - Žitnjak,Lamborghini,Huracan,300.000 €,2016. godište,Benzin,426 kW,coupe,2,26000 km,https://www.njuskalo.hr/auti/lamborghini-huracan-lp580-vozilo-sustavu-pdv-a-oglas-39677967

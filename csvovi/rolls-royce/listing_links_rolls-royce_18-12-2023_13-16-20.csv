@@ -1,0 +1,3 @@
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,45.560321313885,18.646679527453,Osječko-baranjska,Osijek,Rolls-Royce,Silver Spur,35.500 €,1986. godište,Benzin,147 kW,limuzina,4,35000 km,https://www.njuskalo.hr/auti/rolls-royce-silver-spur-kalifornije-nigdje-hrde-akcijska-cijena-oglas-38969059
+2,,,Grad Zagreb,Stenjevec,Rolls-Royce,Ghost,158.900 €,2015. godište,Benzin,420 kW,limuzina,4,81460 km,https://www.njuskalo.hr/auti/rolls-royce-ghost-series-ii-6.6-v12-individual-oglas-29532393

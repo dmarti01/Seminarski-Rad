@@ -1,0 +1,5 @@
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,45.817045566143975,15.943253292324158,Grad Zagreb,Črnomerec,Ferrari,458,150.000 €,2012. godište,Benzin,419 kW,coupe,2,82000 km,https://www.njuskalo.hr/auti/ferrari-458-italia-automatik-oglas-42289452
+2,45.792744,15.906451,Grad Zagreb,Trešnjevka - Jug,Ferrari,488,283.000 €,2018. godište,Benzin,493 kW,kabriolet,2,43000 km,https://www.njuskalo.hr/auti/ferrari-488-spider-alu-mf-volan-lift-carbon-servisna-garancija-reg-oglas-40406972
+3,,,Grad Zagreb,,Ferrari,296,432.577,2022. godište,Benzin,610 kW,coupe,3,,https://www.njuskalo.hr/novi-auti/ferrari-296-gtb-oglas-41103906
+4,51.060183140519605,10.613140090575888,Njemačka,,Ferrari,California,95.900 €,2012. godište,Benzin,338 kW,kabriolet,2,23320 km,https://www.njuskalo.hr/auti/ferrari-california-paint-argento-automatik-oglas-30294642

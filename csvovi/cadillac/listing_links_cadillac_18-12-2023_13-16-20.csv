@@ -1,0 +1,7 @@
+linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,45.808475,15.78707,Zagrebačka,Sveta Nedelja,Cadillac,Escalade,29.500 €,2008. godište,Benzin,301 kW,terensko vozilo / SUV / pick up,5,308000 km,https://www.njuskalo.hr/auti/cadillac-escalade-6.2-4x4-awd-lpg-oglas-42205775
+2,46.243027327478,16.622789893635,Varaždinska,Ludbreg,Cadillac,Seville,12.900 €,1999. godište,Benzin,224 kW,limuzina,5,55000 km,https://www.njuskalo.hr/auti/cadillac-seville-sts-automatik-oglas-42007682
+4,44.093778686196,15.24012320601,Zadarska,Zadar,Cadillac,STS,9.000 €,1997. godište,Benzin,224 kW,limuzina,4,73000 km,https://www.njuskalo.hr/auti/cadillac-sts-4.6-v8-automatik-oglas-36235937
+5,43.68581946713,15.927072385954,Šibensko-kninska,Šibenik - Okolica,Cadillac,STS,12.000 €,2007. godište,Benzin,205 kW,limuzina,4,90000 km,https://www.njuskalo.hr/auti/cadillac-sts-dts-sedan-automatik-oglas-41684446
+6,45.207856210178,13.692455433921,Istarska,Poreč,Cadillac,STS,7.990 €,1999. godište,Benzin,149 kW,limuzina,4,131000 km,https://www.njuskalo.hr/auti/cadillac-sts-catera-3.0-v-automatik-oglas-39676101
+7,45.769041205206,15.949479504129,Grad Zagreb,Novi Zagreb - Zapad,Cadillac,Fleetwood,10.000 €,1990. godište,Benzin,134 kW,limuzina,5,82000 km,https://www.njuskalo.hr/auti/cadillac-fleetwood-sedan-automatik-oglas-24761733
