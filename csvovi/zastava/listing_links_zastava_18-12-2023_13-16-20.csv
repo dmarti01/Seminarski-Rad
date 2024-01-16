@@ -1,1 +1,3 @@
 linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,45.855529885779,15.853551824818,Zagrebačka,Zaprešić - Okolica,Zastava,128,2.700 €,1988. godište,Benzin,40 kW,limuzina,4,70000 km,https://www.njuskalo.hr/auti/zastava-128-oglas-42281257
+2,45.28104768191,17.095078619821,Sisačko-moslavačka,Novska,Zastava,750,4.000 €,1982. godište,Benzin,23 kW,hatchback,2,57000 km,https://www.njuskalo.hr/auti/zastava-750-850-oglas-41492929

@@ -1,1 +1,4 @@
 linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,45.834816,16.059101,Grad Zagreb,Gornja Dubrava,Yugo,55,1.500 €,1988. godište,Benzin,40 kW,hatchback,3,29000 km,https://www.njuskalo.hr/auti/yugo-55-ax-oglas-42292942
+2,45.528094545936,18.600045874766,Osječko-baranjska,Osijek,Yugo,45,3.200 €,1990. godište,Benzin,,coupe,3,59000 km,https://www.njuskalo.hr/auti/yugo-45-59.000km-moguca-zamjena-oglas-40258973
+3,45.826531381945,15.852650036379,Grad Zagreb,Podsused - Vrapče,Yugo,55,1.500 €,1991. godište,Benzin,40 kW,coupe,3,51600 km,https://www.njuskalo.hr/auti/yugo-55-coral-oglas-40342162

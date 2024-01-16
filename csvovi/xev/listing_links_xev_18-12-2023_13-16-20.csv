@@ -1,1 +1,5 @@
 linenum,lat,lng,county,city,carBrand,carModel,price,yearOfDistribution,motor,power,oblikVozila,brojVrata,mileage,url
+1,43.50872879259486,16.45136117935181,Splitsko-dalmatinska,Split,XEV,Yoyo,13.999 €,2022. godište,Električni,7 kW,monovolumen,2,5726 km,https://www.njuskalo.hr/auti/xev-yoyo-sport-automatik-cijenu-je-ukljucen-pdv-oglas-41232317
+2,43.510505530072,16.453260785873,Splitsko-dalmatinska,Split,XEV,Kitty,12.300 €,2022. godište,Električni,12 kW,monovolumen,2,,https://www.njuskalo.hr/novi-auti/xev-kitty-cita-automatik-oglas-37774813
+3,43.509281262189,16.452434062958,Splitsko-dalmatinska,Split,XEV,Yoyo,15.205 €,2022. godište,Električni,15 kW,monovolumen,2,,https://www.njuskalo.hr/novi-auti/xev-yoyo-sport-elektricni-automobil-oglas-37774717
+4,45.801273593031,15.956459503314,Grad Zagreb,Trešnjevka - Sjever,XEV,Yoyo,12.700 €,2022. godište,Električni,8 kW,hatchback,3,,https://www.njuskalo.hr/novi-auti/xev-yoyo-sport-automatik-oglas-37915774
