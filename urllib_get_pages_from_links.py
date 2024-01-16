@@ -26,8 +26,13 @@ global host
 global proxyuser
 global proxypass
 host = "https://brd.superproxy.io:22225"
-proxyuser = "brd-customer-hl_0ba0faa8-zone-data_center"
-proxypass = "9rc2myrrez3k"
+# domagoj acc
+# proxyuser = "brd-customer-hl_0ba0faa8-zone-data_center"
+# proxypass = "9rc2myrrez3k"
+
+#josip acc
+proxyuser = "brd-customer-hl_26e5cda2-zone-data_center"
+proxypass = "054ogjr6ng7l"
 
 # default_headers = urllib3.make_headers(proxy_basic_auth='brd-customer-hl_0ba0faa8-zone-data_center:9rc2myrrez3k')
 # http = urllib3.ProxyManager("https://brd.superproxy.io:22225", proxy_headers=default_headers)
